@@ -1,4 +1,4 @@
-module ELO
+module Elo
   class Match
     attr_reader :player_one, :player_two
 
@@ -31,7 +31,7 @@ module ELO
 
     private
       def k_factor
-        ELO.configuration.k_factor
+        Elo.configuration.k_factor
       end
 
 

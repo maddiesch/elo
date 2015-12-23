@@ -1,4 +1,4 @@
-module ELO
+module Elo
   class Player
     attr_reader :score
 
@@ -7,12 +7,7 @@ module ELO
     end
 
     def rating
-      (10 ** (score / 400)).to_f
-    end
-
-    # Expected score if self wins against player
-    def expected_score(player)
-      rating / (rating + player.rating)
+      10.0 ** (score.to_f / 400.0)
     end
 
   end

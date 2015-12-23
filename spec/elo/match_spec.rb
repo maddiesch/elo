@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe ELO::Match do
-  let(:player1) { ELO::Player.new(2400) }
-  let(:player2) { ELO::Player.new(2000) }
-  let(:match) { ELO::Match.new(player_one: player1, player_two: player2) }
+describe Elo::Match do
+  let(:player1) { Elo::Player.new(2400) }
+  let(:player2) { Elo::Player.new(2000) }
+  let(:match) { Elo::Match.new(player_one: player1, player_two: player2) }
 
   describe 'expected rating' do
     it 'player one' do
@@ -16,8 +16,8 @@ describe ELO::Match do
 
   describe 'player one wins' do
     before do
-      match.player_one_score = ELO::Match::WIN
-      match.player_two_score = ELO::Match::LOSS
+      match.player_one_score = Elo::Match::WIN
+      match.player_two_score = Elo::Match::LOSS
       match.update_scores
     end
 
@@ -32,8 +32,8 @@ describe ELO::Match do
 
   describe 'player two wins' do
     before do
-      match.player_one_score = ELO::Match::LOSS
-      match.player_two_score = ELO::Match::WIN
+      match.player_one_score = Elo::Match::LOSS
+      match.player_two_score = Elo::Match::WIN
       match.update_scores
     end
 
@@ -48,8 +48,8 @@ describe ELO::Match do
 
   describe 'draw' do
     before do
-      match.player_one_score = ELO::Match::DRAW
-      match.player_two_score = ELO::Match::DRAW
+      match.player_one_score = Elo::Match::DRAW
+      match.player_two_score = Elo::Match::DRAW
       match.update_scores
     end
 

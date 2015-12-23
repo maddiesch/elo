@@ -1,4 +1,4 @@
-module ELO
+module Elo
   class << self
     def configuration
       @configuration ||= Configuration.new

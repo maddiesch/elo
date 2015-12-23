@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe ELO::Player do
-  let(:player1) { ELO::Player.new(2400) }
-  let(:player2) { ELO::Player.new(2000) }
+describe Elo::Player do
+  let(:player1) { Elo::Player.new(2400) }
+  let(:player2) { Elo::Player.new(2000) }
 
   describe 'rating' do
     it 'calculates 2400' do

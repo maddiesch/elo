@@ -5,7 +5,7 @@ require 'elo/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "elo"
-  spec.version       = ELO::VERSION
+  spec.version       = Elo::VERSION
   spec.authors       = ["Skylar Schipper"]
   spec.email         = ["ss@schipp.co"]
 
