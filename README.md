@@ -1,5 +1,7 @@
 # Elo
 
+[![Circle CI](https://circleci.com/gh/skylarsch/elo.svg?style=svg)](https://circleci.com/gh/skylarsch/elo)
+
 ### Calculate an update from a match
 
 ```ruby
